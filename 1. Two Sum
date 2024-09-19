@@ -6,6 +6,7 @@ class Solution:
         firstNum = ''
         secondNum = ''
 
+# Perhaps it would be better to work from both sides of the list at the same time, working toward the middle.
         for outerindex, outervalue in enumerate(nums):
             if outervalue < target:
                 firstNum = outervalue
