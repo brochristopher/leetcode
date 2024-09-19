@@ -1,8 +1,5 @@
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        # start at the first index value
-        # compare it to the next index
-
         firstNum = ''
         secondNum = ''
 
