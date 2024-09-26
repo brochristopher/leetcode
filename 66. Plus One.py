@@ -9,11 +9,9 @@ class Solution:
 
         new_digit += 1
 
-        str_digits = str(new_digit)
-
         new_array = []
 
-        for i in str_digits:
+        for i in str(new_digit):
             new_array.append(int(i))
             
         return(new_array)
