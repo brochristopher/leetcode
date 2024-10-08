@@ -2,27 +2,12 @@ class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
+        
+        sorted_s = [*s]
+        sorted_s.sort()
 
-        listified_s = []
-        listified_t = []
+        sorted_t = [*t]
+        sorted_t.sort()
 
-        for i in s:
-            listified_s.append(i)
-
-        for i in t:
-            listified_t.append(i)
-
-        listified_s.sort()
-        listified_t.sort()
-
-        s = ""
-        t = ""
-
-        for i in listified_s:
-            s += i
-
-        for i in listified_t:
-            t += i
-
-        if s == t:
+        if sorted_s == sorted_t:
             return True
