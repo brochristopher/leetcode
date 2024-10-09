@@ -8,5 +8,4 @@ class Solution:
                 pointer_s += 1
             pointer_t += 1
 
-        if pointer_s == len(s):
-            return True
+        return  pointer_s == len(s)
